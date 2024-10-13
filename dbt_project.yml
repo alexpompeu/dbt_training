@@ -32,14 +32,14 @@ models:
   dbtlearn:
     +materialized: view
     +schema: "{{ 'prod' if var('is_prod', false) else 'raw' }}"
-    dim:
-      +materialized: table
-    src:
-      +materialized: ephemeral
-    fct:
-      +materialized: table
-    mart:
-      +materialized: table
+  dim:
+    +materialized: table
+  src:
+    +materialized: ephemeral
+  fct:
+    +materialized: table
+  mart:
+    +materialized: table
 
 
 
