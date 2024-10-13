@@ -41,8 +41,6 @@ models:
     mart:
       +materialized: table
 
-vars:
-  is_prod: "{{ target.name == 'prod' }}"
 
 
 
