@@ -1,0 +1,27 @@
+airbnb_dev:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: cn56038.us-east-2.aws
+      user: dbt
+      password: dbtPassword123
+      role: transform
+      database: AIRBNB
+      warehouse: COMPUTE_WH
+      schema: raw
+      threads: 1
+
+airbnb_prod:
+  target: prod
+  outputs:
+    prod:
+      type: snowflake
+      account: cn56038.us-east-2.aws
+      user: dbt
+      password: dbtPassword123
+      role: transform
+      database: AIRBNB
+      warehouse: COMPUTE_WH
+      schema: analytics
+      threads: 1
