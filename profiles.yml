@@ -1,0 +1,15 @@
+dbtlearn:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: cn56038.us-east-2.aws
+      user: dbt
+      password: dbtPassword123
+      role: transform
+      database: AIRBNB
+      warehouse: COMPUTE_WH
+      schema: DEV
+      threads: 4
+      client_session_keep_alive: false
+      query_tag: dbt
